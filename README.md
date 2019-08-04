@@ -1,2 +1,2 @@
 # ChimeraCluster
-Code and Research Documents Related to te Chimera Project
+Code and Research Documents Related to the Chimera Project
