@@ -29,6 +29,6 @@ Some Examples of SBC's that will/may be used in the Chimera Cluster Project are:
 * And Many More!
 
 ### For More Information Check Out The Links Below
-Youtube: https://www.youtube.com/channel/UCUGQJFc_g3fV3CXBQhHHJNQ
-Discord: https://discord.gg/vE7Q24t
-Patreon:
+* Youtube: https://www.youtube.com/channel/UCUGQJFc_g3fV3CXBQhHHJNQ
+* Discord: https://discord.gg/vE7Q24t
+* Patreon:
