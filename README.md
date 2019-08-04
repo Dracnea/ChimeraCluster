@@ -20,7 +20,7 @@ A Chimera Cluster as I have dubbed it is a Computer Cluster build out of compute
 
 ## What is a SBC or Single Board Computer?
 
-A SBC or Single Board Computer is just as what it sounds like in name. These are computers that have processing, memory, graphics and storage all on one small board. Granted these computers are typically not the strongest on their own but are cost effective and can usually fit in your hand.
+A SBC or Single Board Computer is just as what it sounds like in name. These are computers that have processing, memory, graphics and storage all on one small board. Granted these computers are typically not the strongest on their own but are cost effective and can usually fit in your hand. For this project we will be making a Chimera Cluster out of a variety of SBC type computers.
 
 Some Examples of SBC's that will/may be used in the Chimera Cluster Project are:
 * Raspberry Pi
