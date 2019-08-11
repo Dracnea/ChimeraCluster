@@ -8,8 +8,8 @@ John Gibson: Github Help
 Charles: Server and Data Knowledge
 Christian Peterson: 
 
-#Donators
+# Donators
 Below are all those that gave donations.
 
-#####Advanced Level (10$)
+#### Advanced Level (10$)
 Ozay
