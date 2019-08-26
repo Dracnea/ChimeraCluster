@@ -49,3 +49,8 @@ With a Compiled C Program <br />
 
 With a Python Script <br />
 `mpiexec python test.py`<br />
+
+## Advanced Installation
+
+You may also choose to locally build and install a more recent version of any of the OpenMP software. It is not recommended that you replace any current versions of OpenMP installed using the Command Line or that came prepackaged with your OS as they may be vital or are the most recent stable version based on your OS and Processor. Locally building newer versions of OpenMP software may work on your computer but, even if they fully work, please keep in mind that they are not considered stable or supported.
+
