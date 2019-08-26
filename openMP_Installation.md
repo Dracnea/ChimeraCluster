@@ -89,3 +89,8 @@ Install the build: <br />
 `sudo make all install`
 
 #### Local Version Testing
+
+Now you will want to test the locally installed version of OpenMPI. 
+Run the following command: <br />
+`/usr/local/openMPI/bin/mpiexec -n 1 date` <br />
+So long as this returns the date once than this local version of mpi is installed.
