@@ -94,3 +94,12 @@ Now you will want to test the locally installed version of OpenMPI.
 Run the following command: <br />
 `/usr/local/openMPI/bin/mpiexec -n 1 date` <br />
 So long as this returns the date once than this local version of mpi is installed.
+
+MPI4PY can also be tested on this locally run OpenMPI version by first making sure that MPI4PY is installed via: <br />
+`sudo apt-get install python-mpi4py` <br />
+OR <br />
+`sudo apt install python-pip python-dev libopenmpi-dev`<br />
+`sudo apt-get install pip` <br />
+`sudo pip install mpi4py` <br />
+followed by the command with a valid Python file: <br />
+`/usr/local/openMPI/bin/mpiexec -n 4 python test.py` <br />
