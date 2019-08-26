@@ -30,7 +30,7 @@ For Python <br />
 
 ## Basic Installation
 
-The Basic Installation is the simpliesta dn most recommended way to add openMP software to your device. This will grab the latest build that is stable based on your OS and Processor type. This may mean that your installed version will not be the latest OpenMP version but this is fine.
+The Basic Installation is the simpliest and recommended way to add openMP software to your device. This will grab the latest build that is stable based on your OS and Processor type. This may mean that your installed version will not be the latest OpenMP version but this is fine.
 
 #### Installation of OpenMPI:
 For C/C++/Fortran <br />
