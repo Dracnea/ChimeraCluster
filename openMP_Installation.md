@@ -1,5 +1,9 @@
 # Installation Guide for OpenMP Based Software
 
+## What is OpenMP?
+
+OpenMP is a group of softwares used within computer clusters or other groups of computers to pass messages between each node (computer) to allow for the full cluster to run a given piece of code or application. There are different versions of OpenMP based on what languages you plan to have the clustered computer running. These different softwares can be run side by side in order to allow for a variety of programming langauges to be used over the clusters combined computing power.
+
 ## Prerequisites
 
 The following should be done before performing any installations:
