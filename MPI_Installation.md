@@ -1,8 +1,8 @@
-# Installation Guide for OpenMP Based Software
+# Installation Guide for MPI Based Software
 
-## What is OpenMP?
+## What is MPI?
 
-OpenMP is a group of softwares used within computer clusters or other groups of computers to pass messages between each node (computer) to allow for the full cluster to run a given piece of code or application. There are different versions of OpenMP based on what languages you plan to have the clustered computer running. These different softwares can be run side by side in order to allow for a variety of programming langauges to be used over the clusters combined computing power.
+MPI is a group of softwares used within computer clusters or other groups of computers to pass messages between each node (computer) to allow for the full cluster to run a given piece of code or application. There are different versions of OpenMP based on what languages you plan to have the clustered computer running. These different softwares can be run side by side in order to allow for a variety of programming langauges to be used over the clusters combined computing power.
 
 ## Prerequisites
 
@@ -36,6 +36,8 @@ For Python <br />
 
 The Basic Installation is the simpliest and recommended way to add openMP software to your device. This will grab the latest build that is stable based on your OS and Processor type. This may mean that your installed version will not be the latest OpenMP version but this is fine.
 
+### On Standard Linux Flavors
+
 #### Installation of OpenMPI:
 For C/C++/Fortran <br />
 `sudo apt-get install openmpi-bin` <br />
@@ -43,6 +45,20 @@ For C/C++/Fortran <br />
 #### Installation of MPI4PY:
 For Python <br />
 `sudo apt-get install python-mpi4py` <br />
+
+### On Gentoo and Similar Flavors
+
+#### Installation of OpenMPI:
+For C/C++/Fortran <br />
+`esudo merge --ask --autounmask-write sys-cluster/openmpi` <br />
+
+#### Installation of MPI4PY:
+For Python <br />
+`sudo emerge --ask --autounmask-write dev-python/mpi4py` <br />
+
+Both commands should then be followed by
+`sudo dispatch-conf` <br />
+Followed by entering 'u' to use the new config. Then rerun the original command without the `--autounmask-write` tag.
 
 ## Basic Testing
 
