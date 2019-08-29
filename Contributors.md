@@ -9,17 +9,18 @@ Charles: Server and Data Knowledge <br />
 Christian Peterson: <br />
 
 # Donators
-Those that helped to fund the project.
+Those that helped to fund the project based on their highest patreon rank.
 
-##
+## Literal Madlad (150$)
 
-###
 
-####
+### Subproject Supporter (100$)
 
-##### Advanceder
+#### Become A Node (50$)
 
-##### Advanced(10$)
+##### Advanceder (25$)
+
+##### Advanced (10$)
 Ozay
 
-###### Basic
+###### Basic (5$)
