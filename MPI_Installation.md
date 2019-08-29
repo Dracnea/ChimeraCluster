@@ -50,7 +50,7 @@ For Python <br />
 
 #### Installation of OpenMPI:
 For C/C++/Fortran <br />
-`esudo merge --ask --autounmask-write sys-cluster/openmpi` <br />
+`sudo emerge --ask --autounmask-write sys-cluster/openmpi` <br />
 
 #### Installation of MPI4PY:
 For Python <br />
@@ -59,6 +59,9 @@ For Python <br />
 Both commands should then be followed by
 `sudo dispatch-conf` <br />
 Followed by entering 'u' to use the new config. Then rerun the original command without the `--autounmask-write` tag.
+
+Installing hpl may also be benficial depending on cluster use: <br />
+`sudo emerge --ask --autounmask-write sys-cluster/hpl` <br />
 
 ## Basic Testing
 
