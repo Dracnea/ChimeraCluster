@@ -15,9 +15,10 @@ THIS MAY BREAK RPI4 AS IT HAS LITTLE OS / BOOT FILE SUPPORT AS OF 8/26/19.
 `sudo apt-get upgrade` <br />
 `sudo reboot` <br />
 
-Ensure that you have Make installed.
+Ensure that you have Make and nmap installed.
 
 `sudo apt-get install make` <br />
+`sudo apt-get install nmap` <br />
 
 Ensure that gcc, g++ and gfortran are all installed for C, C++ and Fortran compiler support. Most systems should at least initially have gcc.
 
