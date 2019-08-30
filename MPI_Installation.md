@@ -122,3 +122,32 @@ OR <br />
 `sudo pip install mpi4py` <br />
 followed by the command with a valid Python file: <br />
 `/usr/local/openMPI/bin/mpiexec -n 4 python test.py` <br />
+
+#### Final Setups
+
+Now we need to make sure that the master node can access all of the other nodes.
+Proceed to make a file called nodeips (a txt) with a list of just the ips for each node.
+
+We also need to exchange ssh keys between the systems to allow the nodes to be accessed without the need for a password.
+This should all be done through the master.
+To generate the key: <br />
+`ssh-keygen -t rsa1` <br />
+
+Transfer the key to all nodes 1 at a time: <br />
+`scp /home/USERNAME/.ssh/id_rsa.pub USERNAME@EXA.MPL.E.*:/home/USERNAME/master.pub` <br />
+
+Then ssh into each node: <br />
+`ssh USERNAME@EXA.MPL.E.*` <br />
+And Enter the Following: <br />
+`cat master.pub >> .ssh/authorized_keys` <br />
+`exit` <br />
+
+Now you should be able to connect to each node without a password and can check this by re-sshing into each node.
+
+#### Cluster Usage
+
+OpenMPI uses the following syntax for taking in a hostname file to access each node. <br />
+Note that this first example will return the hostname of each node. <br />
+`mpiexec -n 2 --hostfile ~/nodeips.txt hostname` <br />
+Example of how to give mpiexec a machine file (executable) to run <br />
+`mpiexec -n 2 --hostfile ~/nodeips.txt --machinefile ./HelloWorld`<br />
