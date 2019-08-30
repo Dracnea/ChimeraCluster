@@ -123,7 +123,7 @@ OR <br />
 followed by the command with a valid Python file: <br />
 `/usr/local/openMPI/bin/mpiexec -n 4 python test.py` <br />
 
-#### Final Setups
+## Final Setups
 
 Now we need to make sure that the master node can access all of the other nodes.
 Proceed to make a file called nodeips (a txt) with a list of just the ips for each node.
