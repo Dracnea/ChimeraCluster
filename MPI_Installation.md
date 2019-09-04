@@ -127,7 +127,10 @@ followed by the command with a valid Python file: <br />
 ## Final Setups
 
 Now we need to make sure that the master node can access all of the other nodes.
-Proceed to make a file called nodeips (a txt) with a list of just the ips for each node.
+Proceed to make a file called nodeips (a txt) with a list of just the ips for each node. <br />
+Here is an example with 2 nodes that each have 4 cores: <br />
+`172.16.1.1 --slots = 4` <br />
+`172.16.1.2 --slots = 4` <br />
 
 We also need to exchange ssh keys between the systems to allow the nodes to be accessed without the need for a password.
 This should all be done through the master.
@@ -149,6 +152,10 @@ Now you should be able to connect to each node without a password and can check 
 
 OpenMPI uses the following syntax for taking in a hostname file to access each node. <br />
 Note that this first example will return the hostname of each node. <br />
-`mpiexec -n 2 --hostfile ~/nodeips.txt hostname` <br />
+`mpiexec -n 2 --hostfile ~/nodeips hostname` <br />
 Example of how to give mpiexec a machine file (executable) to run <br />
-`mpiexec -n 2 --hostfile ~/nodeips.txt --machinefile ./HelloWorld`<br />
+`mpiexec -n 2 --hostfile ~/nodeips ./HelloWorld`<br />
+
+You can also run multiple commands as follows: <br />
+`mpiexec --hostfile ~/nodeips -np 2 hostname : -np 2 ./HelloWorld` <br />
+This example will run hostname on 2 cores and Hello World on 2 other cores.
